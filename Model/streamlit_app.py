@@ -22,14 +22,14 @@ st.set_page_config(page_title="Predictive Maintenance", page_icon="🏭", layout
 #     feature_columns = joblib.load("feature_columns.pkl")
 #     return model, scaler, feature_columns
 
-try:
-    model, scaler, feature_columns = load_artifacts()
-except FileNotFoundError:
-    st.error(
-        "File model tidak ditemukan. Pastikan best_model.pkl, scaler.pkl, dan "
-        "feature_columns.pkl ada di folder yang sama dengan streamlit_app.py."
-    )
-    st.stop()
+# try:
+#     model, scaler, feature_columns = load_artifacts()
+# except FileNotFoundError:
+#     st.error(
+#         "File model tidak ditemukan. Pastikan best_model.pkl, scaler.pkl, dan "
+#         "feature_columns.pkl ada di folder yang sama dengan streamlit_app.py."
+#     )
+#     st.stop()
 
 st.title("🏭 Predictive Maintenance")
 st.caption("Prediksi apakah mesin butuh maintenance berdasarkan parameter proses produksi.")
