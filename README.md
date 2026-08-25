@@ -20,6 +20,8 @@ Trained on a public tabular dataset (1,000 rows) sourced from Kaggle, representi
 ## Motivation
 Unplanned machine downtime is a major cause of production loss in textile manufacturing, particularly for small-to-medium manufacturers that lack access to expensive industrial IoT systems. This project explores a lightweight, accessible predictive maintenance approach as an alternative.
 
+## File
+
 ## How to use it (if you want to run in locally)
 since this project is need a real-time data, we've made a sensor simulation that will be needed to run so the model that we've trained can run properly in real time
 - step 1 : open terminal or CMD for windows
