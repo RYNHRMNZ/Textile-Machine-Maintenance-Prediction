@@ -31,7 +31,7 @@ since this project is need a real-time data, we've made a sensor simulation that
 Note :  run this after you open the directory file
 
 ## Requirement
-- Python 3.10+ or Python 3.14
+- Python 3.10+
 
 ## Status
 🚧 Work in progress / Proof of concept
