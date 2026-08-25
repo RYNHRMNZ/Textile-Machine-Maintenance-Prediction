@@ -22,13 +22,13 @@ Unplanned machine downtime is a major cause of production loss in textile manufa
 
 ## How to use it
 since this project is need a real-time data, we've made a sensor simulation that will be needed to run so the model that we've trained can run properly in real time
-step 1 : open terminal or CMD for windows
-step 2 : then run this command : 
-    [ python -m streamlit run streamlit_app.py ]
+- step 1 : open terminal or CMD for windows
+- step 2 : then run this command : 
+- [ python -m streamlit run streamlit_app.py ]
     or
-    [ streamlit run streamlit_app.py ]
-  Note : 
-    run this after you open the directory file
+- [ streamlit run streamlit_app.py ]
+
+Note :  run this after you open the directory file
     
 ## Status
 🚧 Work in progress / Proof of concept
