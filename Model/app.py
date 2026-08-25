@@ -87,7 +87,7 @@ with tab_batch:
                 data=csv_result,
                 file_name="prediction_results.csv",
                 mime="text/csv",
-            )
+            ) 
 
 st.divider()
 st.caption("COMPFEST 18 AIC — Predictive Maintenance untuk Industri Tekstil")
