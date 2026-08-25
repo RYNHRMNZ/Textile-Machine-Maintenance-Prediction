@@ -21,7 +21,7 @@ try:
 except FileNotFoundError:
     st.error(
         "File model tidak ditemukan. Pastikan best_model.pkl, scaler.pkl, dan "
-        "feature_columns.pkl ada di folder yang sama dengan app.py."
+        "feature_columns.pkl ada di folder yang sama dengan streamlit_app.py."
     )
     st.stop()
 
