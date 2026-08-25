@@ -5,16 +5,22 @@ import joblib
 from streamlit_autorefresh import st_autorefresh
 
 from sensor_simulator import TextileMachineSimulator
+import os
+
+model_dir = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(model_dir, "best_model.pkl"))
+scaler = joblib.load(os.path.join(model_dir, "scaler.pkl"))
+feature_columns = joblib.load(os.path.join(model_dir, "feature_columns.pkl"))
 
 st.set_page_config(page_title="Predictive Maintenance", page_icon="🏭", layout="centered")
 
 # ---------- Load model artifacts ----------
 @st.cache_resource
-def load_artifacts():
-    model = joblib.load("best_model.pkl")
-    scaler = joblib.load("scaler.pkl")
-    feature_columns = joblib.load("feature_columns.pkl")
-    return model, scaler, feature_columns
+# def load_artifacts():
+#     model = joblib.load("best_model.pkl")
+#     scaler = joblib.load("scaler.pkl")
+#     feature_columns = joblib.load("feature_columns.pkl")
+#     return model, scaler, feature_columns
 
 try:
     model, scaler, feature_columns = load_artifacts()
