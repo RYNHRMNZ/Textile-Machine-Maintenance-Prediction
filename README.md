@@ -25,7 +25,7 @@ since this project is need a real-time data, we've made a sensor simulation that
 - step 1 : open terminal or CMD for windows
 - step 2 : then run this command : 
 - [ python -m streamlit run streamlit_app.py ]
-    or
+-    or
 - [ streamlit run streamlit_app.py ]
 
 Note :  run this after you open the directory file
