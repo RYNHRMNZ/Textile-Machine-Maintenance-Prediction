@@ -15,7 +15,7 @@ feature_columns = joblib.load(os.path.join(model_dir, "feature_columns.pkl"))
 st.set_page_config(page_title="Predictive Maintenance", page_icon="🏭", layout="centered")
 
 # ---------- Load model artifacts ----------
-@st.cache_resource
+# @st.cache_resource
 # def load_artifacts():
 #     model = joblib.load("best_model.pkl")
 #     scaler = joblib.load("scaler.pkl")
